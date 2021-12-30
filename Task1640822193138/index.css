@@ -1,0 +1,120 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+@keyframes bounce {
+    0% {
+      top: 0vh;
+      left: 0vh;
+      filter: hue-rotate(0deg);
+    
+     9% {
+       filter: hue-rotate(0deg);
+    }
+     }
+
+    10% {
+        top: 22.5vh;
+        left: calc(100vw - 29.5vh);
+        filter: hue-rotate(45deg);
+    }
+    19% {
+        filter: hue-rotate(45deg);
+    }
+
+    20% {
+        top: calc(100vh - 15vh);
+        left: 50%;
+        filter: hue-rotate(90deg);
+    }
+    29% {
+        filter: hue-rotate(90deg);
+    }
+
+    30% {
+        top: 40vh;
+        left: 0;
+        filter: hue-rotate(140deg);
+    }
+    39% {
+        filter: hue-rotate(140deg);
+    }
+
+    40% {
+        top: 0vh;
+        left: 40vw;
+        filter: hue-rotate(185deg);
+    }
+    49% {
+        filter: hue-rotate(185deg);
+    }
+
+    50% {
+        top: 5vh;
+        left: calc(100vw - 29.5vh);
+        filter: hue-rotate(210deg);
+    }
+    59% {
+        filter: hue-rotate(210deg);
+    }
+
+    60% {
+        top:  calc(100vh - 15vh);
+        left: calc(85vw - 29.5vh);
+        filter: hue-rotate(260deg);
+    }
+    69% {
+        filter: hue-rotate(260deg);
+    }
+
+    70% {
+        top:  0;
+        left: calc(65vw - 29.5vh);
+        filter: hue-rotate(290deg);
+    }
+    79% {
+        filter: hue-rotate(290deg);
+    }
+
+    80% {
+        top:  calc(100vh - 15vh);
+        left: 0;
+        filter: hue-rotate(300deg);
+    }
+    89% {
+        filter: hue-rotate(300deg);
+    }
+
+    90% {
+        top:  calc(50vh - 15vh);
+        left: calc(100vw - 29.5vh);
+        filter: hue-rotate(330deg);
+    }
+    99% {
+        filter: hue-rotate(330deg);
+    }
+  
+    100% {
+        top: 0vh;
+        left: 0vh;
+        filter: hue-rotate(360deg);
+    }
+  }
+
+img{
+    height: 15vh;
+    width: 29.5vh;
+    position: absolute;
+    animation-duration: 20s;
+    animation-name: bounce;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
